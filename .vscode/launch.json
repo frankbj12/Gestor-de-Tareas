@@ -5,6 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "go.toolsEnvVars": {"GO111MODULE": "on"}
+
+        }
+        
+        {
             "name": "Launch file",
             "type": "go",
             "request": "launch",
