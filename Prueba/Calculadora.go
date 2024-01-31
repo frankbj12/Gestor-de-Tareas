@@ -17,27 +17,27 @@ func main() {
 
 	// Mostrar opciones al usuario
 	fmt.Println("Selecciona la operación:")
-	fmt.Println("1. Suma")
-	fmt.Println("2. Resta")
-	fmt.Println("3. Multiplicación")
-	fmt.Println("4. División")
+	fmt.Println("1. suma")
+	fmt.Println("2. resta")
+	fmt.Println("3. multiplicación")
+	fmt.Println("4. división")
 
 	// Leer la opción del usuario
-	var opcion int
+	var opcion string
 	fmt.Scanln(&opcion)
 
 	// Realizar la operación seleccionada
 	switch opcion {
-	case 1:
+	case "1":
 		resultado := num1 + num2
 		fmt.Println("Resultado:", resultado)
-	case 2:
+	case "2":
 		resultado := num1 - num2
 		fmt.Println("Resultado:", resultado)
-	case 3:
+	case "3":
 		resultado := num1 * num2
 		fmt.Println("Resultado:", resultado)
-	case 4:
+	case "4":
 		if num2 != 0 {
 			resultado := num1 / num2
 			fmt.Println("Resultado:", resultado)
